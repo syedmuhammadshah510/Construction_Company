@@ -25,20 +25,54 @@ window.addEventListener('scroll', () => {
 const hamburger = document.getElementById('hamburger');
 const navLinks  = document.getElementById('navLinks');
 
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
+// Create backdrop overlay for closing menu on outside tap
+const menuOverlay = document.createElement('div');
+menuOverlay.id = 'menuOverlay';
+menuOverlay.style.cssText = `
+  position: fixed; inset: 0; z-index: 998;
+  background: rgba(0,0,0,0.5);
+  display: none; opacity: 0;
+  transition: opacity 0.3s ease;
+`;
+document.body.appendChild(menuOverlay);
+
+function openMenu() {
+  navLinks.classList.add('open');
+  menuOverlay.style.display = 'block';
+  setTimeout(() => { menuOverlay.style.opacity = '1'; }, 10);
+  document.body.style.overflow = 'hidden';
   const spans = hamburger.querySelectorAll('span');
-  spans[0].style.transform = navLinks.classList.contains('open') ? 'rotate(45deg) translate(5px, 5px)' : '';
-  spans[1].style.opacity   = navLinks.classList.contains('open') ? '0' : '1';
-  spans[2].style.transform = navLinks.classList.contains('open') ? 'rotate(-45deg) translate(5px, -5px)' : '';
+  spans[0].style.transform = 'rotate(45deg) translate(4px, 6px)';
+  spans[1].style.opacity   = '0';
+  spans[1].style.transform = 'scaleX(0)';
+  spans[2].style.transform = 'rotate(-45deg) translate(4px, -6px)';
+}
+
+function closeMenu() {
+  navLinks.classList.remove('open');
+  menuOverlay.style.opacity = '0';
+  setTimeout(() => { menuOverlay.style.display = 'none'; }, 300);
+  document.body.style.overflow = '';
+  const spans = hamburger.querySelectorAll('span');
+  spans[0].style.transform = '';
+  spans[1].style.opacity   = '1';
+  spans[1].style.transform = '';
+  spans[2].style.transform = '';
+}
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.contains('open') ? closeMenu() : openMenu();
 });
 
+menuOverlay.addEventListener('click', closeMenu);
+
 navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-    hamburger.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = '1'; });
-  });
+  link.addEventListener('click', closeMenu);
 });
+
+// Close button inside drawer
+const navClose = document.getElementById('navClose');
+if (navClose) navClose.addEventListener('click', closeMenu);
 
 /* ---- HERO SLIDER ---- */
 const slides   = document.querySelectorAll('.hero-slide');

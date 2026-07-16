@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syeds Groups of Company.Ltd | Premier Construction</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== LOADER ========== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <span class="loader-icon"><i class="fas fa-hard-hat"></i></span>
+        <h2>Syeds Groups</h2>
+      </div>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+      <p class="loader-text">Building Your Future...</p>
+    </div>
+  </div>
+
+  <!-- ========== NAVBAR ========== -->
+  <header id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <i class="fas fa-hard-hat logo-icon"></i>
+        <div class="logo-text">
+          <span class="logo-main">Syeds Groups</span>
+          <span class="logo-sub">of Company.Ltd</span>
+        </div>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#team">Team</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn-nav">Get a Quote</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="home" class="hero">
+    <div class="hero-slides">
+      <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1600&q=80')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=1600&q=80')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="hero-badge"><i class="fas fa-award"></i> Trusted Since 1998</span>
+      <h1 class="hero-title">Building <span class="accent">Excellence</span><br>Delivering Dreams</h1>
+      <p class="hero-desc">Syeds Groups of Company.Ltd is Pakistan's premier construction firm — delivering world-class residential, commercial, and infrastructure projects with unmatched precision and integrity.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary"><i class="fas fa-eye"></i> View Our Work</a>
+        <a href="#contact" class="btn btn-outline"><i class="fas fa-phone"></i> Contact Us</a>
+      </div>
+      <div class="hero-stats">
+        <div class="h-stat"><strong>500+</strong><span>Projects Done</span></div>
+        <div class="h-stat-divider"></div>
+        <div class="h-stat"><strong>25+</strong><span>Years Experience</span></div>
+        <div class="h-stat-divider"></div>
+        <div class="h-stat"><strong>150+</strong><span>Expert Team</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll"><a href="#about"><i class="fas fa-chevron-down"></i></a></div>
+    <div class="slide-dots" id="slideDots">
+      <span class="dot active" onclick="goToSlide(0)"></span>
+      <span class="dot" onclick="goToSlide(1)"></span>
+      <span class="dot" onclick="goToSlide(2)"></span>
+    </div>
+  </section>
+
+  <!-- ========== MARQUEE STRIP ========== -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span><i class="fas fa-building"></i> Commercial Construction</span>
+      <span><i class="fas fa-home"></i> Residential Projects</span>
+      <span><i class="fas fa-road"></i> Infrastructure</span>
+      <span><i class="fas fa-industry"></i> Industrial Buildings</span>
+      <span><i class="fas fa-bridge"></i> Bridges & Civil Works</span>
+      <span><i class="fas fa-paint-roller"></i> Interior Design</span>
+      <span><i class="fas fa-building"></i> Commercial Construction</span>
+      <span><i class="fas fa-home"></i> Residential Projects</span>
+      <span><i class="fas fa-road"></i> Infrastructure</span>
+      <span><i class="fas fa-industry"></i> Industrial Buildings</span>
+      <span><i class="fas fa-bridge"></i> Bridges & Civil Works</span>
+      <span><i class="fas fa-paint-roller"></i> Interior Design</span>
+    </div>
+  </div>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section id="about" class="about section-pad">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images">
+          <div class="about-img-main">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=700&q=80" alt="Construction site" loading="lazy" />
+          </div>
+          <div class="about-img-secondary">
+            <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=400&q=80" alt="Building construction" loading="lazy" />
+          </div>
+          <div class="about-badge-box">
+            <span class="about-years">25+</span>
+            <span>Years of<br>Excellence</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="section-tag"><i class="fas fa-circle-dot"></i> About Us</span>
+          <h2 class="section-title">Pakistan's Most <span class="accent">Trusted</span> Construction Partner</h2>
+          <p>Founded in 1998, <strong>Syeds Groups of Company.Ltd</strong> has grown into one of Pakistan's most reputable and diversified construction companies. We blend cutting-edge engineering with timeless craftsmanship to create structures that stand the test of time.</p>
+          <p>From towering commercial complexes to luxury residences and critical infrastructure, we deliver projects on time, within budget, and to the highest quality standards.</p>
+          <div class="about-features">
+            <div class="about-feat"><i class="fas fa-check-circle"></i> ISO 9001:2015 Certified</div>
+            <div class="about-feat"><i class="fas fa-check-circle"></i> 500+ Completed Projects</div>
+            <div class="about-feat"><i class="fas fa-check-circle"></i> Award-Winning Designs</div>
+            <div class="about-feat"><i class="fas fa-check-circle"></i> Nationwide Operations</div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES SECTION ========== -->
+  <section id="services" class="services section-pad bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-circle-dot"></i> What We Do</span>
+        <h2 class="section-title">Our <span class="accent">Core Services</span></h2>
+        <p>We offer a comprehensive range of construction and engineering services tailored to your needs.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-building"></i></div>
+          <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=500&q=80" alt="Commercial Construction" loading="lazy" />
+          <div class="service-body">
+            <h3>Commercial Construction</h3>
+            <p>Office towers, shopping malls, hotels, and corporate headquarters built to international standards.</p>
+            <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-home"></i></div>
+          <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=500&q=80" alt="Residential Projects" loading="lazy" />
+          <div class="service-body">
+            <h3>Residential Projects</h3>
+            <p>Luxury villas, housing schemes, and apartment complexes crafted with elegance and comfort.</p>
+            <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-road"></i></div>
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80" alt="Infrastructure" loading="lazy" />
+          <div class="service-body">
+            <h3>Infrastructure Works</h3>
+            <p>Roads, bridges, dams, and public utilities that connect communities and drive progress.</p>
+            <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-industry"></i></div>
+          <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=500&q=80" alt="Industrial" loading="lazy" />
+          <div class="service-body">
+            <h3>Industrial Buildings</h3>
+            <p>Factories, warehouses, and industrial facilities designed for maximum efficiency and safety.</p>
+            <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-paint-roller"></i></div>
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=500&q=80" alt="Interior Design" loading="lazy" />
+          <div class="service-body">
+            <h3>Interior Design & Fit-Out</h3>
+            <p>End-to-end interior solutions combining aesthetics with functional, modern design principles.</p>
+            <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-drafting-compass"></i></div>
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80" alt="Project Management" loading="lazy" />
+          <div class="service-body">
+            <h3>Project Management</h3>
+            <p>Expert oversight from planning to handover, ensuring quality, timelines, and cost control.</p>
+            <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS SECTION ========== -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <i class="fas fa-project-diagram"></i>
+          <h3 class="counter" data-target="500">0</h3><span>+</span>
+          <p>Projects Completed</p>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-users"></i>
+          <h3 class="counter" data-target="150">0</h3><span>+</span>
+          <p>Expert Professionals</p>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-smile"></i>
+          <h3 class="counter" data-target="320">0</h3><span>+</span>
+          <p>Happy Clients</p>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-trophy"></i>
+          <h3 class="counter" data-target="45">0</h3><span>+</span>
+          <p>Awards Won</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section id="projects" class="projects section-pad">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-circle-dot"></i> Our Portfolio</span>
+        <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+        <p>A showcase of our most iconic and impactful construction achievements.</p>
+      </div>
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+        <button class="filter-btn" data-filter="residential">Residential</button>
+        <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-category="commercial">
+          <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80" alt="Business Tower" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-cat">Commercial</span>
+            <h3>Syed Business Tower</h3>
+            <p>Karachi, Pakistan — 2023</p>
+            <a href="#" class="project-link"><i class="fas fa-expand"></i></a>
+          </div>
+        </div>
+        <div class="project-card" data-category="residential">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80" alt="Luxury Villa" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-cat">Residential</span>
+            <h3>Royal Palm Villas</h3>
+            <p>Lahore, Pakistan — 2022</p>
+            <a href="#" class="project-link"><i class="fas fa-expand"></i></a>
+          </div>
+        </div>
+        <div class="project-card" data-category="infrastructure">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Highway Bridge" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-cat">Infrastructure</span>
+            <h3>Motorway Bridge M-9</h3>
+            <p>Hyderabad, Pakistan — 2021</p>
+            <a href="#" class="project-link"><i class="fas fa-expand"></i></a>
+          </div>
+        </div>
+        <div class="project-card" data-category="commercial">
+          <img src="https://images.unsplash.com/photo-1582407947304-fd86f28f958e?w=600&q=80" alt="Shopping Mall" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-cat">Commercial</span>
+            <h3>Syeds Grand Mall</h3>
+            <p>Islamabad, Pakistan — 2023</p>
+            <a href="#" class="project-link"><i class="fas fa-expand"></i></a>
+          </div>
+        </div>
+        <div class="project-card" data-category="residential">
+          <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=600&q=80" alt="Apartment Complex" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-cat">Residential</span>
+            <h3>Green Heights Apartments</h3>
+            <p>Rawalpindi, Pakistan — 2022</p>
+            <a href="#" class="project-link"><i class="fas fa-expand"></i></a>
+          </div>
+        </div>
+        <div class="project-card" data-category="infrastructure">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Industrial Plant" loading="lazy" />
+          <div class="project-overlay">
+            <span class="project-cat">Infrastructure</span>
+            <h3>Faisalabad Industrial Zone</h3>
+            <p>Faisalabad, Pakistan — 2020</p>
+            <a href="#" class="project-link"><i class="fas fa-expand"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY CHOOSE US ========== -->
+  <section class="why-us section-pad bg-dark">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-img">
+          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=700&q=80" alt="Construction excellence" loading="lazy" />
+          <div class="why-exp-badge"><span>25</span><small>Years of Trust</small></div>
+        </div>
+        <div class="why-content">
+          <span class="section-tag light"><i class="fas fa-circle-dot"></i> Why Choose Us</span>
+          <h2 class="section-title light">The <span class="accent">Syeds Advantage</span></h2>
+          <p class="why-desc">We don't just build structures — we build legacies. Our commitment to excellence, safety, and innovation sets us apart in Pakistan's construction landscape.</p>
+          <div class="why-items">
+            <div class="why-item">
+              <div class="why-num">01</div>
+              <div>
+                <h4>On-Time Delivery</h4>
+                <p>Strict project timelines with milestone-based delivery management ensuring zero delays.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-num">02</div>
+              <div>
+                <h4>Quality Assurance</h4>
+                <p>ISO-certified processes and rigorous quality checks at every stage of construction.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-num">03</div>
+              <div>
+                <h4>Safety First</h4>
+                <p>Zero-accident culture backed by comprehensive safety protocols and trained personnel.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-num">04</div>
+              <div>
+                <h4>Transparent Pricing</h4>
+                <p>Detailed cost breakdowns with no hidden charges — your budget, our commitment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TEAM SECTION ========== -->
+  <section id="team" class="team section-pad bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-circle-dot"></i> Our People</span>
+        <h2 class="section-title">Meet Our <span class="accent">Leadership Team</span></h2>
+        <p>Experienced professionals dedicated to delivering the highest standards in construction.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-img">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="CEO" loading="lazy" />
+            <div class="team-social">
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Syed Mansoor Ali</h3>
+            <span>Founder & CEO</span>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-img">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80" alt="COO" loading="lazy" />
+            <div class="team-social">
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Syed Raza Hassan</h3>
+            <span>Chief Operations Officer</span>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-img">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80" alt="Chief Engineer" loading="lazy" />
+            <div class="team-social">
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Engr. Bilal Nawaz</h3>
+            <span>Chief Engineer</span>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-img">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80" alt="Architect" loading="lazy" />
+            <div class="team-social">
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Arch. Sara Malik</h3>
+            <span>Lead Architect</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section id="testimonials" class="testimonials section-pad">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-circle-dot"></i> Client Reviews</span>
+        <h2 class="section-title">What Our <span class="accent">Clients Say</span></h2>
+        <p>Real feedback from the people who matter most — our valued clients.</p>
+      </div>
+      <div class="testimonials-slider" id="testimonialsSlider">
+        <div class="testi-track" id="testiTrack">
+          <div class="testi-card">
+            <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"Syeds Groups delivered our 20-storey commercial tower on time and within budget. Their professionalism and attention to detail is unmatched in the industry."</p>
+            <div class="testi-author">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&q=80" alt="Client" loading="lazy" />
+              <div><strong>Ahmed Farooq</strong><span>Director, Farooq Holdings</span></div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"Our luxury housing scheme was handled with exceptional care. Every villa was built to the exact specifications we requested. Truly outstanding craftsmanship!"</p>
+            <div class="testi-author">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80" alt="Client" loading="lazy" />
+              <div><strong>Nadia Iqbal</strong><span>MD, Iqbal Developers</span></div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"The bridge project was massive in scope but Syeds Groups managed it flawlessly. Safety, quality, and communication were top-notch throughout."</p>
+            <div class="testi-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="Client" loading="lazy" />
+              <div><strong>Tariq Mehmood</strong><span>Deputy Commissioner, NHA</span></div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+            <p>"From design consultation to final handover, the entire experience was seamless. I'd recommend Syeds Groups to any developer looking for quality work."</p>
+            <div class="testi-author">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&q=80" alt="Client" loading="lazy" />
+              <div><strong>Kamran Shah</strong><span>CEO, Shah Real Estate</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-controls">
+        <button id="testiPrev"><i class="fas fa-chevron-left"></i></button>
+        <button id="testiNext"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA SECTION ========== -->
+  <section class="cta-section">
+    <div class="cta-bg" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80')"></div>
+    <div class="cta-overlay"></div>
+    <div class="container cta-content">
+      <h2>Ready to Build Your Vision?</h2>
+      <p>Let's turn your ideas into iconic structures. Contact us today for a free consultation.</p>
+      <a href="#contact" class="btn btn-primary btn-lg"><i class="fas fa-hard-hat"></i> Start Your Project</a>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section id="contact" class="contact section-pad bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-circle-dot"></i> Get In Touch</span>
+        <h2 class="section-title">Contact <span class="accent">Us Today</span></h2>
+        <p>Reach out to our team for inquiries, quotes, or project consultations.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Head Office</h4>
+              <p>Syeds Business Center, Block 5,<br>Clifton, Karachi, Pakistan</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p>+92 21 3456 7890<br>+92 300 1234 567</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p>info@syedsgroups.com<br>projects@syedsgroups.com</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>Working Hours</h4>
+              <p>Mon – Sat: 9:00 AM – 6:00 PM<br>Sunday: Closed</p>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+92 300 0000000" />
+              </div>
+              <div class="form-group">
+                <label for="service">Service Needed</label>
+                <select id="service" name="service">
+                  <option value="">Select a service</option>
+                  <option>Commercial Construction</option>
+                  <option>Residential Project</option>
+                  <option>Infrastructure Works</option>
+                  <option>Industrial Building</option>
+                  <option>Interior Design</option>
+                  <option>Project Management</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group" style="margin-bottom:24px">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">
+            <i class="fas fa-hard-hat"></i>
+            <div><span>Syeds Groups</span><small>of Company.Ltd</small></div>
+          </a>
+          <p>Building Pakistan's future with integrity, innovation, and excellence since 1998.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+            <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
+            <li><a href="#team"><i class="fas fa-chevron-right"></i> Our Team</a></li>
+            <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#services"><i class="fas fa-chevron-right"></i> Commercial Construction</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right"></i> Residential Projects</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right"></i> Infrastructure Works</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right"></i> Industrial Buildings</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right"></i> Interior Design</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right"></i> Project Management</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Subscribe for our latest project updates and industry insights.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" />
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+          <div class="footer-badges">
+            <div class="f-badge"><i class="fas fa-certificate"></i> ISO 9001:2015</div>
+            <div class="f-badge"><i class="fas fa-shield-alt"></i> Licensed & Insured</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2024 Syeds Groups of Company.Ltd. All rights reserved. | Designed with <i class="fas fa-heart" style="color:#e67e22"></i> in Pakistan</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
